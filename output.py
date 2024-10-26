@@ -12,7 +12,7 @@ def read_file(file_path):
 def export_files(files, output_file):
     with open(output_file, 'w', encoding='utf-8') as out:
         for file_path in files:
-            out.write(f"文件名：{file_path}\n")
+            out.write(f"檔名：{file_path}\n")
             out.write(read_file(file_path))
             out.write("\n\n")
     print(f"文件内容已成功导出到 {output_file}")
